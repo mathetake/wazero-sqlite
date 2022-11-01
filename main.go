@@ -31,7 +31,7 @@ func main() {
 	}
 
 	// Compile sqlite Wasm binary.
-	compiledSqlite, err := r.CompileModule(ctx, sqlite3Wasm, wazero.NewCompileConfig())
+	compiledSqlite, err := r.CompileModule(ctx, sqlite3Wasm)
 	if err != nil {
 		log.Panicln(err)
 	}
